@@ -195,6 +195,14 @@
       font-family: consolas;
       color:white;}
 
+   /* Setting the background banner */
+
+    #header
+    { 
+      border-bottom: 2px solid #FFFFFF;
+      background: transparent url(footballbanner.png) no-repeat;
+      height: 180px;}
+
     /* Styling for the icons of the footer */
 
     #social img {
