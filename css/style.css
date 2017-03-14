@@ -366,4 +366,33 @@
 
     a.thumb, ul.thumbs li.Nav a.thumb {
       background: white;}
+
+    /* Styling gallery for LiverpoolFC page */
+
+    div.playerspictures {
+    border: 1px solid white;}
+
+    div.playerspictures:hover {
+    border: 1px solid white;}
+
+    div.playerspictures img {
+    width: 100%;
+    height: auto;}
+
+    div.name {
+    padding: 15px;
+    text-align: center;}
+
+    * {
+    box-sizing: border-box;}
+
+    .players {
+    padding: 0 5px;
+    width: 25%;
+    float: left;}
+
+    h2.scorer {
+    text-align: center;}
+
+
       
