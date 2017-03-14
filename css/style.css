@@ -161,6 +161,37 @@
       color: #1a8cff;
       font:blue}
 
+
+   /* setting the content of the site */
+
+    #s_content_liverpool
+    { overflow: hidden;
+      margin: 20px auto 0 auto;
+      width: 900px;
+      padding: 0 0 13px 0;
+      padding-right: 60px} 
+
+  /* Adding style to the sidebar */
+
+    #container_side_liverpool
+    { float: right;
+      width: 224px;
+      padding-right: 100px;}
+
+    .sidebar_top_liverpool
+    { width: 222px;
+      height: 14px;}
+
+    .sidebar_base_liverpool
+    { width: 222px;
+      height: 14px;}
+
+    .sidebar_item_liverpool
+    {
+      padding: 0 15px;
+      width: 400px;
+    }
+
     /* Styling the main content */
 
     #content
@@ -392,7 +423,7 @@
     float: left;}
 
     h2.scorer {
-    text-align: center;}
+    text-align: left;}
 
     /* Additing the media query to maake the gallery responsive */
 
