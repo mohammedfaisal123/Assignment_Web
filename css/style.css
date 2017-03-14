@@ -1,0 +1,269 @@
+@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/FontStyle.eot'); 
+    src: local(Yanone Kaffeesatz), url('../fonts/FontStyle.ttf'); 
+} 
+
+html { 
+  height: 100%;
+  background-size: cover;
+}
+
+body { 
+  font: normal 80% 'Yanone Kaffeesatz', arial, sans-serif;
+  background: #282828 url(../images/Background.jpeg);
+  background-size: cover;
+  color: #BBB;
+    background-repeat: no-repeat;}}
+
+/* Styling the headings */
+p { 
+  padding: 0 0 25px 0;
+  line-height: 1.7em;}
+
+h1, h2, h3, h4, h5, h6 { 
+  font: normal 200% 'Yanone Kaffeesatz', arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 0 0 5px 0;}
+
+h2 { 
+  font: normal 170% 'Yanone Kaffeesatz', arial, sans-serif;
+  margin: 0;
+  padding: 0 0 8px 0;}
+
+h3 { 
+  font: normal 150% arial, sans-serif;}
+
+h4, h5, h6 { 
+  margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 110% arial, sans-serif;
+  line-height: 1.5em;}
+
+h5, h6 { 
+  font: italic 95% arial, sans-serif;
+  padding-bottom: 15px;}
+
+header { 
+  width: 950px;
+  height: 105px;}
+
+  /* Styling the logo */
+
+#logo { 
+  width: 250px;
+  float: left;
+  height: 100px;
+  background: transparent;
+  padding: 0 0 10px 10px;}
+
+#logo h1 { 
+  font: normal 400% 'Yanone Kaffeesatz', 'News Cycle', sans-serif;
+  padding: 45px 0 0 17px;
+  color:white;}
+
+#logo h1 a:hover { 
+  text-decoration: none;}
+ 
+ /* Styling the menu */
+
+ul img {
+  border: none;}
+
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;}
+
+ul.sf-menu ul li { 
+  float: left; 
+  width: 150px;}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;}
+
+/* Navigation Menu Stylingg */
+
+nav { 
+  width: 650px;
+  margin: 1px auto 0 auto;
+  float: right;
+  padding: 35px 0 0 0;} 
+  
+ul#nav { 
+  float: right;
+  margin: 25px 10px 0 0;}
+
+ul#nav li a {
+  font: normal 150% 'News Cycle', sans-serif;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  z-index: 10;
+  display: block;
+  float: left;
+  height: 30px;
+  padding:5px 14px 6px 15px;
+  position: relative;
+  overflow: hidden;}
+
+  h2, h6 { 
+  color: #07E5F9;}
+
+ul#nav ul { 
+  margin-top: 40px;
+  padding-bottom: 10px;}
+
+a, a:hover { 
+  color: #C5E105;}
+
+ul#nav li a {
+  text-shadow: 1px 1px #000;
+  color: #FFF;}
+
+ul#nav ul { 
+  background: #151515;}
+
+ul#nav li.Nav a, ul#nav li a:hover, ul#nav ul li a:hover, ul#nav ul li a:focus, ul#nav li.Nav ul a:hover { 
+  color: #C5E105;}
+
+a.thumb, ul.thumbs li.Nav a.thumb {
+  background: #FFF;}
+  
+  /* CSS for the footer including webkit transitions */
+
+  #footer {
+  width: 100%;
+  clear: both;
+  background: transparent;
+  text-align: center;
+  color: white;
+  bottom: 0;
+}
+
+#footer p {
+
+  font-weight: bold;
+  font-size: 20px;
+  font-family: consolas;
+  color:white;
+}
+
+#social img {
+  border-radius: 50%;
+  margin: 1px;
+  width: 45px;
+}
+/* Styling for the icons of the footer */
+
+#social {
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+#social img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+#social img:hover {
+  margin: 0px;
+  box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+}
+
+/* Slideshow creation and animation */
+
+.imageHolder {
+  position: relative;
+}
+.imageHolder .caption {
+  opacity: 0;
+  position: absolute;
+  padding: 2px 0px;
+  color: black;
+  font-family: 'segoe UI';
+  font-size: 30px;
+  background: #FF6633;
+  text-align: center;
+  font-weight: bold;
+  top: 25%;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.imageHolder:hover .caption {
+  opacity: 0.7;
+}
+
+.imageHolder img {
+  border: inset;
+  border-color: #FF6633;
+}
+
+#image {
+
+  display: none
+}
+
+.container {
+  margin: 50px auto;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: white;
+  border-left-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+  position: relative;
+}
+.photo {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+}
+@keyframes round{
+25%{opacity:1;}
+40%{opacity:0;}
+}
+
+img:nth-child(4) {
+  animation-delay: 0s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(2) {
+  animation-delay: 8s;
+}
+img:nth-child(1) {
+  animation-delay: 12s;
+  }
+
