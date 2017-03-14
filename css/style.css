@@ -67,7 +67,7 @@
       font: normal 100% arial;
       text-transform: uppercase;}
 
-    h5, h6
+    h5, h6 
     { color: #888;
       padding: 0 0 15px 0;
       font: normal 95% arial;
@@ -404,3 +404,25 @@
     display: table;
     content: "";
     clear: both;}
+
+    @media only screen and (max-width: 500px){
+    .players{
+    width: 100%;}}
+
+    .clearfix:after {
+    display: table;
+    content: "";
+    clear: both;}
+
+   /* Positioning the youtube video */
+
+    div.youtubevideo {
+      margin-left: 5px;
+      position: relative; 
+      padding-bottom: 30px;}
+
+    /* Styling the youtube title */
+
+    div.youtubevideo h3 {
+    color: white;
+    font-style: bold;}
