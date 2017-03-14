@@ -1,269 +1,361 @@
-@font-face { 
-  font-family: Yanone Kaffeesatz; 
-    src: url('../fonts/FontStyle.eot'); 
-    src: local(Yanone Kaffeesatz), url('../fonts/FontStyle.ttf'); 
-} 
+    html
+    { height: 100%;}
 
-html { 
-  height: 100%;
-  background-size: cover;
-}
+    *
+    { margin: 0;
+      padding: 0;}
 
-body { 
-  font: normal 80% 'Yanone Kaffeesatz', arial, sans-serif;
-  background: #282828 url(../images/Background.jpeg);
-  background-size: cover;
-  color: #BBB;
-    background-repeat: no-repeat;}}
+    body
+    { font: normal .80em 'trebuchet ms', arial, sans-serif;
+      background-image: url("../images/Background.jpg");
+      background-size: cover;
+      color: #BBB;
+      background-repeat: repeat;
+      width: 100%}
 
-/* Styling the headings */
-p { 
-  padding: 0 0 25px 0;
-  line-height: 1.7em;}
+    p
+    { padding: 0 0 20px 0;
+      line-height: 1.7em;}
 
-h1, h2, h3, h4, h5, h6 { 
-  font: normal 200% 'Yanone Kaffeesatz', arial, sans-serif;
-  margin: 0 0 15px 0;
-  padding: 0 0 5px 0;}
+    /* Styling the header for Liverpool FC */
 
-h2 { 
-  font: normal 170% 'Yanone Kaffeesatz', arial, sans-serif;
-  margin: 0;
-  padding: 0 0 8px 0;}
+    header.Liverpooltitle {
+    margin: 0 0 3em 0;
+    text-align: center;
+    position: relative;}
 
-h3 { 
-  font: normal 150% arial, sans-serif;}
+    header.Liverpooltitle:after {
+    content: '';
+    display: inline-block;
+    height: 0.2em;
+    width: 75%;
+    max-width: 20em;}
 
-h4, h5, h6 { 
-  margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 110% arial, sans-serif;
-  line-height: 1.5em;}
+    header.Liverpooltitle {
+    margin: 0 0 3em 0;}
 
-h5, h6 { 
-  font: italic 95% arial, sans-serif;
-  padding-bottom: 15px;}
+    p.quote {
+      font-style: italic;
+      font-style: bold;
+      color:white;
+    }
 
-header { 
-  width: 950px;
-  height: 105px;}
+    /* Styling the headings */
 
-  /* Styling the logo */
+    h1, h2, h3, h4, h5, h6 
+    { letter-spacing: 0em;
+      color: white;
+      padding: 0 0 0px 0;}
 
-#logo { 
-  width: 250px;
-  float: left;
-  height: 100px;
-  background: transparent;
-  padding: 0 0 10px 10px;}
+    h1, h2, h3
+    { margin: 0 0 15px 0;
+      font: normal 180% 'century gothic', arial;
+      padding: 15px 0 5px 0;}
 
-#logo h1 { 
-  font: normal 400% 'Yanone Kaffeesatz', 'News Cycle', sans-serif;
-  padding: 45px 0 0 17px;
-  color:white;}
+    h2
+    { font-size: 160%;
+      padding: 9px 0 5px 0;}
 
-#logo h1 a:hover { 
-  text-decoration: none;}
- 
- /* Styling the menu */
+    h3
+    { font-size: 140%;
+      padding: 5px 0 0 0;
+      color: black;}
 
-ul img {
-  border: none;}
+    h4, h6
+    { color: #009FBC;
+      padding: 0 0 5px 0;
+      font: normal 100% arial;
+      text-transform: uppercase;}
 
-ul.sf-menu,ul.sf-menu * { 
-  margin: 0;
-  padding: 0;}
+    h5, h6
+    { color: #888;
+      padding: 0 0 15px 0;
+      font: normal 95% arial;
+      letter-spacing: normal;}
 
-ul.sf-menu { 
-  display: block;
-  position: relative;}
-  
-ul.sf-menu li { 
-  display: block;
-  list-style: none;
-  float: left;
-  position: relative;}
 
-ul.sf-menu a { 
-  display: block;
-  position: relative;}
-  
-ul.sf-menu ul { 
-  position: absolute;
-  left: 0;
-  width: 150px; 
-  top: auto;
-  left: -999999px;}
+    /* Setting the margin for the site content */
 
-ul.sf-menu ul li { 
-  float: left; 
-  width: 150px;}
-  
-ul.sf-menu ul ul { 
-  top: 0;
-  margin: 0 0 0 150px;}
+    #main, #logo, #nav, #s_content, #footer, #container, #navmenu
+    { margin-left: auto; 
+      margin-right: auto;}
+      
+      /* Styling the heading */
 
-/* Navigation Menu Stylingg */
+    #logo
+    { width: 880px;
+      background: transparent;
+      position: relative;
+      height: 140px;}
 
-nav { 
-  width: 650px;
-  margin: 1px auto 0 auto;
-  float: right;
-  padding: 35px 0 0 0;} 
-  
-ul#nav { 
-  float: right;
-  margin: 25px 10px 0 0;}
+    #logo h1, #logo h2
+    { font: normal 300% 'century gothic', arial, sans-serif;
+      margin: 0 0 0 9px;
+      border-bottom: 0;
+      text-transform: none;}
 
-ul#nav li a {
-  font: normal 150% 'News Cycle', sans-serif;
-  text-decoration: none;
-  outline: none;
-  text-align: center;
-  z-index: 10;
-  display: block;
-  float: left;
-  height: 30px;
-  padding:5px 14px 6px 15px;
-  position: relative;
-  overflow: hidden;}
+      #logo #logo_text 
+    { position: absolute; 
+      top: 10px;
+      left: 0;}
 
-  h2, h6 { 
-  color: #07E5F9;}
+    #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
+    { padding: 22px 0 0 0;
+      color: #FFF;
+      letter-spacing: 0.1em;
+      text-decoration: none;}
 
-ul#nav ul { 
-  margin-top: 40px;
-  padding-bottom: 10px;}
+    #logo_text h1 a .logo_colour
+    { color: #E7746F;}
 
-a, a:hover { 
-  color: #C5E105;}
+    #logo_text a:hover .logo_colour
+    { color: #FFF;}
 
-ul#nav li a {
-  text-shadow: 1px 1px #000;
-  color: #FFF;}
+    #logo_text h2
+    { font-size: 120%;
+      padding: 4px 0 0 0;
+      color: #FFF;}
 
-ul#nav ul { 
-  background: #151515;}
+    /* setting the content of the site */
 
-ul#nav li.Nav a, ul#nav li a:hover, ul#nav ul li a:hover, ul#nav ul li a:focus, ul#nav li.Nav ul a:hover { 
-  color: #C5E105;}
+    #s_content
+    { overflow: hidden;
+      margin: 20px auto 0 auto;
+      width: 900px;
+      padding: 0 0 13px 0;} 
 
-a.thumb, ul.thumbs li.Nav a.thumb {
-  background: #FFF;}
-  
-  /* CSS for the footer including webkit transitions */
+    /* Adding style to the sidebar */
 
-  #footer {
-  width: 100%;
-  clear: both;
-  background: transparent;
-  text-align: center;
-  color: white;
-  bottom: 0;
-}
+    #container_side
+    { float: right;
+      width: 224px;}
 
-#footer p {
+    .sidebar_top
+    { width: 222px;
+      height: 14px;
+      background: transparent ("../images/top.png"); no-repeat;}
 
-  font-weight: bold;
-  font-size: 20px;
-  font-family: consolas;
-  color:white;
-}
+    .sidebar_base
+    { width: 222px;
+      height: 14px;
+      background: url("../images/base.png"); no-repeat;}
 
-#social img {
-  border-radius: 50%;
-  margin: 1px;
-  width: 45px;
-}
-/* Styling for the icons of the footer */
+    .sidebar
+    { float: right;
+      width: 222px;
+      padding: 0;
+      margin: 0 0 16px 0;}
 
-#social {
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-#social img {
-  border-radius: 50%;
-  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
+    .sidebar_item
+    { background: url("../images/back.png");repeat-y;
+      padding: 0 15px;
+      width: 192px;}
 
-#social img:hover {
-  margin: 0px;
-  box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
-}
+    .sidebar li a.selected
+    { color: #444;} 
 
-/* Slideshow creation and animation */
+    .sidebar ul
+    { margin: 0;} 
 
-.imageHolder {
-  position: relative;
-}
-.imageHolder .caption {
-  opacity: 0;
-  position: absolute;
-  padding: 2px 0px;
-  color: black;
-  font-family: 'segoe UI';
-  font-size: 30px;
-  background: #FF6633;
-  text-align: center;
-  font-weight: bold;
-  top: 25%;
-  margin-right: 30%;
-  margin-left: 30%;
-}
-.imageHolder:hover .caption {
-  opacity: 0.7;
-}
+    ul#navi li a {
+      color: #1a8cff;
+      font:blue}
 
-.imageHolder img {
-  border: inset;
-  border-color: #FF6633;
-}
+    /* Styling the main content */
 
-#image {
+    #content
+    { text-align: left;
+      width: 620px;
+      padding: 0 0 0 5px;
+      float: left;}
+      
+    #content ul
+    { margin: 2px 0 22px 0px;}
 
-  display: none
-}
+    #content ul li, .sidebar ul li
+    { list-style-type: none;
+      margin: 0 0 0 0; 
+      padding: 0 0 4px 5px;
+      line-height: 1.5em;}
 
-.container {
-  margin: 50px auto;
-  width: 500px;
-  height: 300px;
-  overflow: hidden;
-  border: 10px solid;
-  border-top-color: white;
-  border-left-color: white;
-  border-bottom-color: white;
-  border-right-color: white;
-  position: relative;
-}
-.photo {
-  position: absolute;
-  animation: round 16s infinite;
-  opacity: 0;
-}
-@keyframes round{
-25%{opacity:1;}
-40%{opacity:0;}
-}
+     /* CSS for the footer including webkit transitions */
 
-img:nth-child(4) {
-  animation-delay: 0s;
-}
-img:nth-child(3) {
-  animation-delay: 4s;
-}
-img:nth-child(2) {
-  animation-delay: 8s;
-}
-img:nth-child(1) {
-  animation-delay: 12s;
-  }
+      #footer {
+      width: 100%;
+      clear: both;
+      background: transparent;
+      text-align: center;
+      color: black;
+      bottom: 0;}
 
+    #footer p {
+
+      font-weight: bold;
+      font-size: 13px;
+      font-family: consolas;
+      color:white;}
+
+    /* Styling for the icons of the footer */
+
+    #social img {
+      border-radius: 50%;
+      margin: 1px;
+      width: 45px;}
+
+    #social {
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      transition: all ease 0.5s;}
+
+    #social img {
+      border-radius: 50%;
+      box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      -o-transition: all ease 0.5s;
+      -ms-transition: all ease 0.5s;
+      transition: all ease 0.5s;}
+
+    #social img:hover {
+      margin: 0px;
+      box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);}
+
+      /* Slideshow creation and animation */
+
+    .imageholder{ 
+      position: relative;}
+
+    .imageHolder img {
+      border: inset;
+      border-color: #FF6633;}
+
+    #image {
+      display: none}
+
+    .container {
+      margin: 10px auto;
+      height: 300px;
+      overflow: hidden;
+      border: 10px solid;
+      border-top-color: black;
+      border-left-color: black;
+      border-bottom-color: black;
+      border-right-color: black;
+      position: relative;
+      text-align: left;
+      width: 600px;
+      padding: 0 0 0 0px;
+      float: left;}
+
+    .photo {
+      position: absolute;
+      animation: round 16s infinite;
+      opacity: 0;}
+
+    @keyframes round{
+    25%{opacity:1;}
+    40%{opacity:0;}}
+
+    img:nth-child(4) {
+      animation-delay: 0s;}
+
+    img:nth-child(3) {
+      animation-delay: 4s;}
+
+    img:nth-child(2) {
+      animation-delay: 8s;}
+
+    img:nth-child(1) {
+      animation-delay: 12s;}
+
+     /* Positioning the navigation menu */
+
+    #navmenu { 
+      width: 900px;
+      height: 70px;} 
+
+    /* Styling the menu */
+
+    ul img {
+      border: none;}
+
+    ul.sf-menu,ul.sf-menu * { 
+      margin: 0;
+      padding: 0;}
+
+    ul.sf-menu { 
+      display: block;
+      position: relative;}
+      
+    ul.sf-menu li { 
+      display: block;
+      list-style: none;
+      float: left;
+      position: relative;}
+
+    ul.sf-menu a { 
+      display: block;
+      position: relative;}
+      
+    ul.sf-menu ul { 
+      position: absolute;
+      left: 0;
+      width: 150px; 
+      top: auto;
+      left: -999999px;}
+
+    ul.sf-menu ul li { 
+      float: left; 
+      width: 150px;}
+      
+    ul.sf-menu ul ul { 
+      top: 0;
+      margin: 0 0 0 150px;}
+
+    /* Navigation Menu Styling */
+
+    nav { 
+      width: 650px;
+      margin: 1px auto 0 auto;
+      float: right;
+      padding: 35px 0 0 0;} 
+      
+    ul#nav { 
+      float: right;
+      margin: 25px 10px 0 0;}
+
+    ul#nav li a {
+      display: block;
+      float: left;
+      height: 30px;
+      font: normal 150% 'News Cycle', sans-serif;
+      text-decoration: none;
+      outline: none;
+      text-align: center;
+      z-index: 10;
+      padding:5px 14px 6px 15px;
+      position: relative;
+      overflow: hidden;}
+
+    ul#nav ul { 
+      margin-top: 40px;
+      padding-bottom: 10px;}
+
+    a, a:hover { 
+      color: #C5E105;}
+
+    ul#nav li a {
+      text-shadow: 1px 1px #000;
+      color: white;}
+
+    ul#nav ul { 
+      background: #151515;}
+
+    ul#nav li.Nav a, ul#nav li a:hover, ul#nav ul li a:hover, ul#nav ul li a:focus, ul#nav li.Nav ul a:hover { 
+      color: black;}
+
+    a.thumb, ul.thumbs li.Nav a.thumb {
+      background: white;}
+      
