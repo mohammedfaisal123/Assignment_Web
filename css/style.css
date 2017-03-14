@@ -394,5 +394,13 @@
     h2.scorer {
     text-align: center;}
 
+    /* Additing the media query to maake the gallery responsive */
 
-      
+    @media only screen and (max-width: 500px){
+    .players{
+    width: 100%;}}
+
+    .clearfix:after {
+    display: table;
+    content: "";
+    clear: both;}
