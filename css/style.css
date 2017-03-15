@@ -37,9 +37,10 @@
       font: normal 180% 'century gothic', arial;
       padding: 15px 0 5px 0;}
 
-    h2
-    { font-size: 160%;
-      padding: 9px 0 5px 0;}
+    h2 {
+      font-size: 160%;
+      padding: 9px 0 5px 0;
+      padding-left:5px;}
 
     h3
     { font-size: 140%;
@@ -410,32 +411,50 @@
 
     .players {
     padding: 0 5px;
-    width: 25%;
+    width: 30%;
     float: left;}
 
     h2.scorer {
     text-align: left;}
 
-    /* Additing the media query to maake the gallery responsive */
-
-    @media only screen and (max-width: 500px){
-    .players{
-    width: 100%;}}
-
-    .clearfix:after {
-    display: table;
-    content: "";
-    clear: both;}
-
-   /* Positioning the youtube video */
+    /* Positioning the youtube video */
 
     div.youtubevideo {
-      margin-left: 5px;
-      position: relative; 
-      padding-bottom: 30px;}
+    margin-left: 5px;
+    position: relative; 
+    padding-bottom: 30px;}
 
     /* Styling the youtube title */
 
-    div.youtubevideo h3 {
-    color: white;
-    font-style: bold;}
+    div.youtubevideo h2 {
+    padding-left: 3px;}
+
+    /* Additing the media query to maake the website responsive */
+
+     @media only screen and (max-width: 900px){
+    .players {
+     width: 27.5%;
+     margin: 6px 0;
+     padding: 0 5px;
+     float: left;}}
+
+    @media only screen and (max-width: 700px){
+    .players {
+    width: 25%;
+    margin: 6px 0;
+    padding: 0 5px;
+    float: left;}}
+
+   @media only screen and (max-width: 700px) {
+    #footer p {
+    font-weight: bold;
+    font-size: 11px;
+    font-family: consolas;
+    color:white;}}
+
+    @media only screen and (max-width: 700px) {
+    h2 {
+    font-size: 100%;
+    padding: 9px 0 5px 0;
+    padding-left:5px;}}
+
