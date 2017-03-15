@@ -19,21 +19,6 @@
 
     /* Styling the header for Liverpool FC */
 
-    header.Liverpooltitle {
-    margin: 0 0 3em 0;
-    text-align: center;
-    position: relative;}
-
-    header.Liverpooltitle:after {
-    content: '';
-    display: inline-block;
-    height: 0.2em;
-    width: 75%;
-    max-width: 20em;}
-
-    header.Liverpooltitle {
-    margin: 0 0 3em 0;}
-
     p.quote {
       font-style: italic;
       font-style: bold;
@@ -199,6 +184,12 @@
       width: 620px;
       padding: 0 0 0 5px;
       float: left;}
+
+     #content_liverpool
+    { text-align: center;
+      margin: 0 auto;
+      width: 600px;
+      padding-top: 30px;}
       
     #content ul
     { margin: 2px 0 22px 0px;}
@@ -426,15 +417,6 @@
     text-align: left;}
 
     /* Additing the media query to maake the gallery responsive */
-
-    @media only screen and (max-width: 500px){
-    .players{
-    width: 100%;}}
-
-    .clearfix:after {
-    display: table;
-    content: "";
-    clear: both;}
 
     @media only screen and (max-width: 500px){
     .players{
