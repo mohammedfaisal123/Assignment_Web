@@ -9,7 +9,7 @@
     { font: normal .80em 'trebuchet ms', arial, sans-serif;
       background-image: url("../images/Background.jpg");
       background-size: cover;
-      color: #BBB;
+      color: black;
       background-repeat: repeat;
       width: 100%}
 
@@ -22,14 +22,14 @@
     p.quote {
       font-style: italic;
       font-style: bold;
-      color:white;
+      color:#696969;
     }
 
     /* Styling the headings */
 
     h1, h2, h3, h4, h5, h6 
     { letter-spacing: 0em;
-      color: white;
+      color: black;
       padding: 0 0 0px 0;}
 
     h1, h2, h3
@@ -216,7 +216,7 @@
       font-weight: bold;
       font-size: 13px;
       font-family: consolas;
-      color:white;}
+      color:black;}
 
    /* Setting the background banner */
 
@@ -477,7 +477,7 @@
 
     #contact-form{
     width: 660px;
-    background: white;
+    background: gray;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
@@ -493,7 +493,7 @@
     #form input, #form textarea {
     font-size: 1.2em;
     margin-top: 10px;
-    border: 2px solid gray;
+    border: 2px black;
     padding: 5px;
     width: 450px;}
 
@@ -516,5 +516,5 @@
     margin-right: 15px;}
 
     h1.form {
-    color: black;}
+    color: black}
 
