@@ -8,6 +8,8 @@
     <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script.js"></script>
+
   </head>
 
   <body>
@@ -45,13 +47,14 @@
     <p>Thank you for visiting, we hope you enjoyed your stay! </p>
        
     <div id="form">
-      
-      <form method="post" action="Thankyou.html">
+
+        <form name="myForm" action="Thankyou.html" onsubmit="return validateForm()" method="post">
+
         <label for="First_Name">First Name:</label>
         <input type="text" name="Name" id="Name" />
         
         <label for="Last_Name">Last Name:</label>
-        <input type="text" name="City" id="City" />
+        <input type="text" name="Last_Name" id="Last_Name" />
   
         <label for="Email">Email:</label>
         <input type="text" name="Email" id="Email" />
@@ -60,7 +63,7 @@
         <textarea name="Enquiry" rows="20" cols="25" id="Enquiry"></textarea>
 
         <input type="submit" name="submit" value="Submit" class="submit" />
-      </form>
+        </form>
     
     </div>
   
@@ -71,7 +74,7 @@
         <div id="footer">
           <br>
             <div id ="social">
-              <a href="http://www.facebook.com"> <img src="images/facebook.png" alt="Facebook"/> </a>
+              <a href="http://www.facebook.com"> <img src="images/facebook.png" alt-"Facebook" /> <a>
               <a href="http://www.plus.google.com"> <img src="images/googleplus.png" alt="GooglePlus"/> </a>
               <a href="http://www.instagram.com"> <img src="images/instagram.png" alt="Instagram"/> </a>
               <a href="http://www.twitter.com"> <img src="images/twitter.png" alt="Twitter"/> </a>
