@@ -26,3 +26,17 @@ function validateForm() {
         return false;
     }
 }
+
+/* JavaScript for message show */
+
+    var player = new Array(3); 
+    player[0] = "";   
+    player[1] = "Name: Lionel Messi \nAge: 29 \nTeam: FC Barcelona \nPosition: Forward \nNational Team: Argentina";
+    player[2] = "Name: Cristiano Ronaldo \nAge: 32 \nTeam: Real Madrid \nPosition: Forward \nNational Team: Portugal";  
+
+    function Profileshow() 
+    {
+
+    var index = document.laligaplayer.pick.selectedIndex
+    document.laligaplayer.text.value = player[index];
+    }
